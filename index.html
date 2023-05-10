@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KELİME BULMACA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section class="figurHarfler">
+    <div class="container">
+        <div class="row text-center my-3">
+            <h1><b>KELİME BULMACA</b></h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img class="icon1" src="img/001.png" alt="">
+                <img class="icon4" src="img/004.png" alt="">
+                <img class="icon7" src="img/007.png" alt="">
+            </div>
+            <div class="col-md-9">
+                    <div class="row w-100 pb-3">
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfA" value="A" onclick="harfA()">A</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfB" value="B" onclick="harfB()">B</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfC" value="C" onclick="harfC()">C</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfD" value="D" onclick="harfD()">D</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfE" value="E" onclick="harfE()">E</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfF" value="F" onclick="harfF()">F</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfG" value="G" onclick="harfG()">G</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfH" value="H" onclick="harfH()">H</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfI" value="I" onclick="harfI()">I</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfK" value="K" onclick="harfK()">K</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfL" value="L" onclick="harfL()">L</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfM" value="M" onclick="harfM()">M</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfN" value="N" onclick="harfN()">N</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfO" value="O" onclick="harfO()">O</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfP" value="P" onclick="harfP()">P</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfR" value="R" onclick="harfR()">R</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfS" value="S" onclick="harfS()">S</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfT" value="T" onclick="harfT()">T</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfU" value="U" onclick="harfU()">U</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfV" value="V" onclick="harfV()">V</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfY" value="Y" onclick="harfY()">Y</button></div>
+                        <div class="col-md-2 harf"><button type="button" class="btn border harfBtn" id="harfZ" value="Z" onclick="harfZ()">Z</button></div>
+                    </div>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<section class="soruCevap">
+    <div class="container">
+        <div class="row w-100 d-flex justify-content-center my-5">
+            <div class="col-md-6 border text-center">
+                <h1>İpucu :</h1>
+                <p id="ipucu"></p>
+            </div>
+        </div>
+        <div class="row w-100 d-flex justify-content-center my-5">
+            <div class="col-md-10 d-flex justify-content-between">
+                <input class="KullaniciTahmin" type="text" placeholder="Tahmininizi büyük harflerle giriniz.">
+                <button id="guess" onclick="tahmin()">Tahmin Et!</button>
+            </div>
+            <p id="tahminEdilen"></p>
+        </div>
+        <div class="row w-100 d-flex justify-content-center my-5">
+            <button onclick="cevabiGoster()" class="cevap btn cevapBtn border">Cevabı göster!</button>
+            <button onclick="yeniSoru()" class="yenile btn cevapBtn border">Yeni Soru!</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(81, 81, 226);
+}
+
+.harfBtn{
+    width: 80px;
+    margin-top: 1rem;
+    background-color: yellow;
+}
+
+.cevapBtn{
+    background-color: tomato;
+    margin-top: 1rem;
+}
+
+.figurHarfler h1{
+    font-size: 50px;
+}
+
+#ipucu{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.KullaniciTahmin{
+    width: 100%;
+}
+
+#tahminEdilen{
+    width: 85%;
+    height: 100px;
+    margin-top: 1rem;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.figurHarfler .icon1, .icon7{
+    display: none;
+}
